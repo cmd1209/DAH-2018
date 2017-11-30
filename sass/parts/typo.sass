@@ -1,0 +1,53 @@
+@mixin font-size($sizeValue: 12 )
+  font-size: $sizeValue + px //fallback for old browsers
+  font-size: (0.0625 * $sizeValue) + rem
+  
+@mixin line-height($heightValue: 20 )
+  line-height: $heightValue + px //fallback for old browsers
+  line-height: (0.0625 * $heightValue) + rem
+  
+@mixin rhythm($sizeValue: 12, $heightValue: 20)
+  @include font-size($sizeValue)
+  @include line-height($heightValue)
+
+
+html
+  font-size: 100%
+body
+  font-size: 106.222%
+  @media all and (max-width: $screen-s)
+    font-size: 102.222%
+
+h1, h2, h3, h4, h5, h6
+  font-weight: normal
+
+h1
+  @include rhythm(32, 38)
+
+h2
+  @include rhythm(28, 30)
+
+h3
+  @include rhythm(24, 28)
+
+h4
+  @include rhythm(22, 24)
+
+h5
+  @include rhythm(18, 20)
+
+h6
+  @include rhythm(16, 18)
+
+h1, h2
+  font-family: 'WeissenhofGrotesk-Light', Arial, Helvetica, sans-serif
+  text-transform: uppercase
+  letter-spacing: 2px
+  color: $pink
+
+h3, h4, h5, h6
+  font-family: 'WeissenhofGrotesk-Medium', Arial, Helvetica, sans-serif
+  color: $studiom
+
+p
+  font-family: 'WeissenhofGrotesk-Regular', Arial, Helvetica, sans-serif

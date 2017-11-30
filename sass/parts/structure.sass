@@ -1,0 +1,30 @@
+
+$screen-xl: 1280px
+$screen-l: 1140px
+$screen-m: 1024px
+$screen-ms: 768px
+$screen-s: 480px
+$screen-xs: 320px
+
+@media all and (max-width: $screen-xl)
+@media all and (max-width: $screen-l)
+@media all and (max-width: $screen-m)
+@media all and (max-width: $screen-s)
+@media all and (max-width: $screen-xs)
+
+.wrapper
+	margin: 0 auto
+	position: relative
+	max-width: $screen-xl
+	@media all and (max-width: $screen-l)
+		max-width: $screen-l
+	@media all and (max-width: $screen-m)
+		max-width: $screen-m
+	@media all and (max-width: $screen-s)
+		max-width: $screen-s
+	@media all and (max-width: $screen-xs)
+		max-width: $screen-xs
+
+img
+	max-width: 100%
+	height: auto

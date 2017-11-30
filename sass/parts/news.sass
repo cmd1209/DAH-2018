@@ -1,0 +1,65 @@
+.news
+	max-width: 100%
+	background-color: $news
+	h2
+		margin: 0
+		color: white
+	h5.excerpt
+		color: white
+		margin: 1em 0
+	
+.newsdetails
+	z-index: 10
+	padding: 0.25em
+	position: absolute
+	left: 1em
+	bottom: 0
+	height: auto
+	transition: all 0.5s ease-in-out
+
+.newshup
+	transform: translateY(-200%)
+.hidden
+	display: none
+
+.flexrow
+	display: flex
+	flex-wrap: wrap
+.flexitem
+	position: relative
+	overflow: hidden
+	padding: 0.5em
+	flex-basis: 33.333%
+	height: 400px
+	@media all and (max-width: $screen-m)
+		flex-basis: 50%
+		height: 320px
+	@media all and (max-width: $screen-s)
+		flex-basis: 100%
+
+.linkblock
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	height: 100%
+	width: 100%
+
+.cat1
+	.newsdetails
+		background-color: rgba($news, 0.9)
+
+.cat2
+	.newsdetails
+		background-color: rgba($tours, 0.9)
+
+.cat3
+	.newsdetails
+		background-color: rgba($studiom, 0.9)
+
+.cat4
+	.newsdetails
+		background-color: rgba($specialex, 0.9)
+
+				
