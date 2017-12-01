@@ -1,6 +1,6 @@
 .news
+	margin: 2em 0
 	max-width: 100%
-	background-color: $news
 	h2
 		margin: 0
 		color: white
@@ -30,12 +30,15 @@
 	overflow: hidden
 	padding: 0.5em
 	flex-basis: 33.333%
-	height: 400px
+	height: 315px
 	@media all and (max-width: $screen-m)
 		flex-basis: 50%
 		height: 320px
 	@media all and (max-width: $screen-s)
 		flex-basis: 100%
+	&:last-of-type, &:first-of-type, &:nth-of-type(8)
+		@media all and (max-width: $screen-m)
+			flex-basis: 100%
 
 .linkblock
 	position: absolute
@@ -49,17 +52,33 @@
 .cat1
 	.newsdetails
 		background-color: rgba($news, 0.9)
+	.linkblock
+		background-color: rgba($news, 0)
+		&:hover
+			background-color: rgba($news, 0.65)
 
 .cat2
 	.newsdetails
 		background-color: rgba($tours, 0.9)
+	.linkblock
+		background-color: rgba($tours, 0)
+		&:hover
+			background-color: rgba($tours, 0.65)
 
 .cat3
 	.newsdetails
 		background-color: rgba($studiom, 0.9)
+	.linkblock
+		background-color: rgba($studiom, 0)
+		&:hover
+			background-color: rgba($studiom, 0.65)
 
 .cat4
 	.newsdetails
 		background-color: rgba($specialex, 0.9)
+	.linkblock
+		background-color: rgba($specialex, 0)
+		&:hover
+			background-color: rgba($specialex, 0.65)
 
 				

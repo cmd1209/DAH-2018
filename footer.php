@@ -1,6 +1,6 @@
 			<!-- footer -->
-			<footer class="footer" role="contentinfo">
 				<div class="wrapper">
+			<footer class="footer" role="contentinfo">
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
@@ -15,8 +15,8 @@
 				</p>
 				<!-- /copyright -->
 
-				</div>
 			</footer>
+				</div>
 			<!-- /footer -->
 
 		<?php wp_footer(); ?>
