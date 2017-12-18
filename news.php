@@ -1,5 +1,4 @@
 <div class="news">
-<div class="wrapper">
   <div class="flexrow">
         <?php $post_object = get_field('links');
         if( $post_object ): $post = $post_object; setup_postdata( $post );  ?>
@@ -114,5 +113,4 @@
         <?php endif; ?>
     </div>
   </div>
-</div>
 </div>

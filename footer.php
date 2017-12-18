@@ -1,5 +1,4 @@
 			<!-- footer -->
-				<div class="wrapper">
 			<footer class="footer" role="contentinfo">
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
@@ -16,7 +15,7 @@
 				<!-- /copyright -->
 
 			</footer>
-				</div>
+
 			<!-- /footer -->
 
 		<?php wp_footer(); ?>

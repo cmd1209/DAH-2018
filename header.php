@@ -27,23 +27,22 @@
 	<body <?php body_class(); ?>>
 
 			<header class="header clear" role="banner">
-				<div class="wrapper">					
+					
+	
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/logo-white.svg" alt="Logo" class="logo-img">
 						</a>
 					</div>
 					<nav class="nav" role="navigation">
 						<?php html5blank_nav(); ?>
 					</nav>
-				</div>
+
 			</header>
 			<div class="scrollheader">
-				<div class="wrapper">
 					<div class="minlogo">
 						<a href="<?php echo home_url(); ?>">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo-long.svg" alt="Logo" class="logo-img">
 						</a>
 					</div>
-				</div>
 			</div>
